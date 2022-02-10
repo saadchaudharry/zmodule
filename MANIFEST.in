@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include zmodule *.css
+recursive-include zmodule *.csv
+recursive-include zmodule *.html
+recursive-include zmodule *.ico
+recursive-include zmodule *.js
+recursive-include zmodule *.json
+recursive-include zmodule *.md
+recursive-include zmodule *.png
+recursive-include zmodule *.py
+recursive-include zmodule *.svg
+recursive-include zmodule *.txt
+recursive-exclude zmodule *.pyc
