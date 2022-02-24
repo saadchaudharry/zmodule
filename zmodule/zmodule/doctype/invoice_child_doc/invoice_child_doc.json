@@ -1,0 +1,60 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-02-21 11:03:03.812552",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "product",
+  "doj",
+  "amount",
+  "data_4",
+  "data_5"
+ ],
+ "fields": [
+  {
+   "fieldname": "product",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Product",
+   "options": "Candidate"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Amount"
+  },
+  {
+   "fieldname": "doj",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "DOJ"
+  },
+  {
+   "fieldname": "data_4",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Employee id"
+  },
+  {
+   "fieldname": "data_5",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Process"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-02-24 16:58:50.882753",
+ "modified_by": "Administrator",
+ "module": "Zmodule",
+ "name": "Invoice Child Doc",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

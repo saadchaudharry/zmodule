@@ -1,0 +1,283 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "JD-.#####",
+ "creation": "2022-02-15 09:43:32.151275",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "company",
+  "job_title",
+  "hr_name",
+  "opening",
+  "interview_slot",
+  "column_break_4",
+  "location",
+  "profile",
+  "hr_contact",
+  "payout",
+  "payout_term",
+  "section_break_12",
+  "table_13",
+  "section_break_8",
+  "workingday",
+  "min_salary",
+  "max_salary",
+  "column_break_11",
+  "incentives",
+  "pf",
+  "esic",
+  "column_break_15",
+  "start_time",
+  "end_time",
+  "section_break_21",
+  "job_description",
+  "section_break_24",
+  "qualification",
+  "gender",
+  "column_break_27",
+  "english",
+  "language",
+  "column_break_30",
+  "min_exp",
+  "max_exp",
+  "column_break_33",
+  "min_age",
+  "max_age",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Vacanies",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_preview": 1,
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Link",
+   "label": "Location",
+   "options": "Location"
+  },
+  {
+   "fieldname": "job_title",
+   "fieldtype": "Data",
+   "label": "Job title"
+  },
+  {
+   "fieldname": "profile",
+   "fieldtype": "Link",
+   "label": "Process",
+   "options": "Profile"
+  },
+  {
+   "fieldname": "hr_name",
+   "fieldtype": "Data",
+   "label": "HR name"
+  },
+  {
+   "fieldname": "hr_contact",
+   "fieldtype": "Data",
+   "label": "HR contact",
+   "options": "Phone"
+  },
+  {
+   "fieldname": "opening",
+   "fieldtype": "Float",
+   "label": "Opening"
+  },
+  {
+   "fieldname": "min_salary",
+   "fieldtype": "Currency",
+   "label": "Min salary"
+  },
+  {
+   "fieldname": "max_salary",
+   "fieldtype": "Currency",
+   "label": "Max salary"
+  },
+  {
+   "fieldname": "workingday",
+   "fieldtype": "Data",
+   "label": "Workingday"
+  },
+  {
+   "fieldname": "payout",
+   "fieldtype": "Currency",
+   "label": "Payout"
+  },
+  {
+   "fieldname": "payout_term",
+   "fieldtype": "Link",
+   "label": "Payout term",
+   "options": "Payout term"
+  },
+  {
+   "default": "0",
+   "fieldname": "incentives",
+   "fieldtype": "Check",
+   "label": "Incentives"
+  },
+  {
+   "default": "0",
+   "fieldname": "pf",
+   "fieldtype": "Check",
+   "label": "PF"
+  },
+  {
+   "default": "0",
+   "fieldname": "esic",
+   "fieldtype": "Check",
+   "label": "ESIC"
+  },
+  {
+   "fieldname": "start_time",
+   "fieldtype": "Time",
+   "label": "Start time"
+  },
+  {
+   "fieldname": "end_time",
+   "fieldtype": "Time",
+   "label": "End time"
+  },
+  {
+   "fieldname": "job_description",
+   "fieldtype": "Text Editor",
+   "label": "Job Description"
+  },
+  {
+   "fieldname": "qualification",
+   "fieldtype": "Data",
+   "label": "Qualification"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Data",
+   "label": "Gender"
+  },
+  {
+   "fieldname": "language",
+   "fieldtype": "Data",
+   "label": "Language"
+  },
+  {
+   "fieldname": "min_exp",
+   "fieldtype": "Data",
+   "label": "Min Exp"
+  },
+  {
+   "fieldname": "max_age",
+   "fieldtype": "Data",
+   "label": "Max Age"
+  },
+  {
+   "fieldname": "english",
+   "fieldtype": "Data",
+   "label": "English"
+  },
+  {
+   "fieldname": "max_exp",
+   "fieldtype": "Data",
+   "label": "Max Exp"
+  },
+  {
+   "fieldname": "min_age",
+   "fieldtype": "Data",
+   "label": "Min Age"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break",
+   "label": "JD detail"
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_21",
+   "fieldtype": "Section Break",
+   "label": "Job description"
+  },
+  {
+   "fieldname": "column_break_15",
+   "fieldtype": "Column Break"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_24",
+   "fieldtype": "Section Break",
+   "label": "selection criteria"
+  },
+  {
+   "fieldname": "column_break_27",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_30",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_33",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "interview_slot",
+   "fieldtype": "Table",
+   "label": "interview slot",
+   "options": "interview slot"
+  },
+  {
+   "fieldname": "section_break_12",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "table_13",
+   "fieldtype": "Table",
+   "options": "job apply"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-02-21 14:45:30.258169",
+ "modified_by": "Administrator",
+ "module": "Zmodule",
+ "name": "Vacanies",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_preview_popup": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

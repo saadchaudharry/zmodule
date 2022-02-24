@@ -1,0 +1,192 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{name1}-{contact}",
+ "creation": "2022-02-10 19:59:08.731811",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "candidate_section",
+  "name1",
+  "contact",
+  "email",
+  "data_4",
+  "dob",
+  "gender",
+  "location",
+  "qualification_section",
+  "qualification",
+  "experience",
+  "profile",
+  "column_break_11",
+  "current_employment_status",
+  "current_salary",
+  "current_ctc",
+  "previous_company",
+  "expected_ctc_section",
+  "expected_ctc",
+  "english",
+  "column_break_21",
+  "job_profile",
+  "language"
+ ],
+ "fields": [
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Candidate Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "contact",
+   "fieldtype": "Data",
+   "label": "Contact",
+   "options": "Phone",
+   "reqd": 1
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email",
+   "options": "Email"
+  },
+  {
+   "fieldname": "dob",
+   "fieldtype": "Date",
+   "label": "DOB"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Link",
+   "label": "Gender",
+   "options": "Gender"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Link",
+   "label": "Location",
+   "options": "Location"
+  },
+  {
+   "fieldname": "data_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "qualification_section",
+   "fieldtype": "Section Break",
+   "label": "Qualification"
+  },
+  {
+   "fieldname": "qualification",
+   "fieldtype": "Link",
+   "label": "Qualification",
+   "options": "Qualification"
+  },
+  {
+   "fieldname": "experience",
+   "fieldtype": "Link",
+   "label": "Experience",
+   "options": "Experience"
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "current_employment_status",
+   "fieldtype": "Select",
+   "in_standard_filter": 1,
+   "label": "Current Employment status",
+   "options": "unemployed\nemployed"
+  },
+  {
+   "fieldname": "profile",
+   "fieldtype": "Link",
+   "label": "Profile",
+   "options": "Profile"
+  },
+  {
+   "depends_on": "eval:doc.current_employment_status == 'employed'",
+   "fieldname": "current_salary",
+   "fieldtype": "Currency",
+   "label": "Current Salary"
+  },
+  {
+   "depends_on": "eval:doc.current_employment_status == 'employed'",
+   "fieldname": "current_ctc",
+   "fieldtype": "Currency",
+   "label": "Current CTC"
+  },
+  {
+   "depends_on": "eval:doc.current_employment_status == 'employed'",
+   "fieldname": "previous_company",
+   "fieldtype": "Data",
+   "label": "Previous Company"
+  },
+  {
+   "fieldname": "candidate_section",
+   "fieldtype": "Section Break",
+   "label": "Candidate"
+  },
+  {
+   "fieldname": "expected_ctc_section",
+   "fieldtype": "Section Break",
+   "label": "info"
+  },
+  {
+   "fieldname": "expected_ctc",
+   "fieldtype": "Currency",
+   "label": "Expected CTC"
+  },
+  {
+   "fieldname": "english",
+   "fieldtype": "Select",
+   "label": "English",
+   "options": "low\nmedium\nhigh"
+  },
+  {
+   "fieldname": "column_break_21",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "job_profile",
+   "fieldtype": "Table MultiSelect",
+   "label": "Job profile",
+   "options": "job profile"
+  },
+  {
+   "fieldname": "language",
+   "fieldtype": "Link",
+   "label": "Language",
+   "options": "know Language"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-02-19 21:34:55.443252",
+ "modified_by": "Administrator",
+ "module": "Zmodule",
+ "name": "Candidate",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

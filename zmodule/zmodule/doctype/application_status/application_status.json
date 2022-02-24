@@ -1,0 +1,130 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "APS-.YYYY.-.#####",
+ "creation": "2022-02-19 13:38:39.994425",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "candidate",
+  "date",
+  "time",
+  "data_4",
+  "vacanies",
+  "status",
+  "date_of_joining",
+  "date_of_leaving",
+  "employee_id",
+  "payout",
+  "work_day"
+ ],
+ "fields": [
+  {
+   "fieldname": "candidate",
+   "fieldtype": "Link",
+   "label": "Candidate",
+   "options": "Candidate"
+  },
+  {
+   "fieldname": "vacanies",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Vacanies",
+   "options": "Vacanies"
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Date"
+  },
+  {
+   "fieldname": "time",
+   "fieldtype": "Data",
+   "label": "Time"
+  },
+  {
+   "bold": 1,
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "status",
+   "options": "\nSet up Interview\nSelected\nReplied\nHold\nRejected\nLeave"
+  },
+  {
+   "fieldname": "data_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.status == 'Selected'",
+   "fieldname": "employee_id",
+   "fieldtype": "Data",
+   "label": "Employee id ",
+   "mandatory_depends_on": "eval:doc.status == 'Selected'"
+  },
+  {
+   "depends_on": "eval:doc.status == 'Selected'",
+   "fetch_from": "vacanies.payout",
+   "fieldname": "payout",
+   "fieldtype": "Currency",
+   "label": "Payout",
+   "mandatory_depends_on": "eval:doc.status == 'Selected'"
+  },
+  {
+   "depends_on": "eval:doc.status == 'Selected' || doc.status == 'Leave'",
+   "fieldname": "date_of_joining",
+   "fieldtype": "Date",
+   "label": "Date of joining",
+   "mandatory_depends_on": "eval:doc.status == 'Selected'",
+   "read_only_depends_on": "eval:doc.status == 'Leave'"
+  },
+  {
+   "depends_on": "eval:doc.status == 'Leave'",
+   "fieldname": "date_of_leaving",
+   "fieldtype": "Date",
+   "label": "Date of leaving",
+   "mandatory_depends_on": "eval:doc.status == 'Leave'"
+  },
+  {
+   "fieldname": "work_day",
+   "fieldtype": "Data",
+   "label": "Work day",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-02-24 23:00:14.626863",
+ "modified_by": "Administrator",
+ "module": "Zmodule",
+ "name": "application status",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "date",
+ "sort_order": "ASC",
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}
