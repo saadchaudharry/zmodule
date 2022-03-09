@@ -17,7 +17,8 @@
   "date_of_leaving",
   "employee_id",
   "payout",
-  "work_day"
+  "work_day",
+  "company"
  ],
  "fields": [
   {
@@ -69,7 +70,7 @@
    "fieldname": "employee_id",
    "fieldtype": "Data",
    "label": "Employee id ",
-   "mandatory_depends_on": "eval:doc.status == 'Selected'"
+   "mandatory_depends_on": "// eval:doc.status == 'Selected'"
   },
   {
    "depends_on": "eval:doc.status == 'Selected'",
@@ -99,11 +100,19 @@
    "fieldtype": "Data",
    "label": "Work day",
    "read_only": 1
+  },
+  {
+   "fetch_from": "vacanies.company",
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company",
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-02-24 23:00:14.626863",
+ "modified": "2022-02-28 13:05:03.908040",
  "modified_by": "Administrator",
  "module": "Zmodule",
  "name": "application status",

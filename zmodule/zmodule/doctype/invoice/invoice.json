@@ -21,8 +21,7 @@
    "fieldname": "company",
    "fieldtype": "Link",
    "label": "Company",
-   "options": "Company",
-   "unique": 1
+   "options": "Company"
   },
   {
    "fieldname": "section_break_2",
@@ -76,7 +75,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2022-02-21 11:13:26.169626",
+ "modified": "2022-02-27 15:51:41.709309",
  "modified_by": "Administrator",
  "module": "Zmodule",
  "name": "Invoice",

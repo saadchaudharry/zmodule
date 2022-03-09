@@ -13,6 +13,7 @@
   "email",
   "data_4",
   "dob",
+  "age",
   "gender",
   "location",
   "qualification_section",
@@ -144,7 +145,7 @@
    "fieldname": "english",
    "fieldtype": "Select",
    "label": "English",
-   "options": "low\nmedium\nhigh"
+   "options": "medium\nlow\nhigh"
   },
   {
    "fieldname": "column_break_21",
@@ -161,11 +162,16 @@
    "fieldtype": "Link",
    "label": "Language",
    "options": "know Language"
+  },
+  {
+   "fieldname": "age",
+   "fieldtype": "Int",
+   "label": "Age"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-02-19 21:34:55.443252",
+ "modified": "2022-03-10 01:29:48.488062",
  "modified_by": "Administrator",
  "module": "Zmodule",
  "name": "Candidate",

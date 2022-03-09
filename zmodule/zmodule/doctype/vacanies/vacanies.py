@@ -16,7 +16,9 @@ class Vacanies(Document):
 									candidate = i.candidate,
 									time = i.time,
 									date = i.date,
-									status = 'Set up Interview'
+									status = 'Set up Interview',
+									owner=frappe.session.user
+
 								)).insert()
 
 

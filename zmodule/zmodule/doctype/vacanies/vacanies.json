@@ -43,8 +43,6 @@
   "min_exp",
   "max_exp",
   "column_break_33",
-  "min_age",
-  "max_age",
   "amended_from"
  ],
  "fields": [
@@ -168,33 +166,27 @@
   },
   {
    "fieldname": "language",
-   "fieldtype": "Data",
-   "label": "Language"
+   "fieldtype": "Link",
+   "label": "Language",
+   "options": "know Language"
   },
   {
    "fieldname": "min_exp",
-   "fieldtype": "Data",
-   "label": "Min Exp"
-  },
-  {
-   "fieldname": "max_age",
-   "fieldtype": "Data",
-   "label": "Max Age"
+   "fieldtype": "Link",
+   "label": "Min Exp",
+   "options": "Experience"
   },
   {
    "fieldname": "english",
-   "fieldtype": "Data",
-   "label": "English"
+   "fieldtype": "Select",
+   "label": "English",
+   "options": "\nlow\nmedium\nhigh"
   },
   {
    "fieldname": "max_exp",
-   "fieldtype": "Data",
-   "label": "Max Exp"
-  },
-  {
-   "fieldname": "min_age",
-   "fieldtype": "Data",
-   "label": "Min Age"
+   "fieldtype": "Link",
+   "label": "Max Exp",
+   "options": "Experience"
   },
   {
    "fieldname": "column_break_4",
@@ -257,7 +249,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2022-02-21 14:45:30.258169",
+ "modified": "2022-03-10 01:12:12.368667",
  "modified_by": "Administrator",
  "module": "Zmodule",
  "name": "Vacanies",

@@ -1,0 +1,97 @@
+{
+ "cards_label": "masters",
+ "category": "Modules",
+ "charts": [],
+ "creation": "2022-02-27 14:49:05.578317",
+ "developer_mode_only": 0,
+ "disable_user_customization": 0,
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "extends_another_page": 0,
+ "hide_custom": 0,
+ "icon": "crm",
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "label": "master",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "gender ",
+   "link_to": "Gender",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "location",
+   "link_to": "Location",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Qualification",
+   "link_to": "Qualification",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Experience",
+   "link_to": "Experience",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Profile",
+   "link_to": "Profile",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Language",
+   "link_to": "know Language",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Payout term",
+   "link_to": "Payout term",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2022-02-28 09:32:57.931294",
+ "modified_by": "Administrator",
+ "module": "Zmodule",
+ "name": "master",
+ "owner": "Administrator",
+ "pin_to_bottom": 0,
+ "pin_to_top": 1,
+ "shortcuts": [
+  {
+   "doc_view": "List",
+   "label": "Company",
+   "link_to": "Company",
+   "type": "DocType"
+  }
+ ]
+}
