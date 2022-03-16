@@ -24,9 +24,9 @@
   "current_employment_status",
   "current_salary",
   "current_ctc",
+  "expected_ctc",
   "previous_company",
   "expected_ctc_section",
-  "expected_ctc",
   "english",
   "column_break_21",
   "job_profile",
@@ -56,19 +56,22 @@
   {
    "fieldname": "dob",
    "fieldtype": "Date",
-   "label": "DOB"
+   "label": "DOB",
+   "reqd": 1
   },
   {
    "fieldname": "gender",
    "fieldtype": "Link",
    "label": "Gender",
-   "options": "Gender"
+   "options": "Gender",
+   "reqd": 1
   },
   {
    "fieldname": "location",
    "fieldtype": "Link",
    "label": "Location",
-   "options": "Location"
+   "options": "Location",
+   "reqd": 1
   },
   {
    "fieldname": "data_4",
@@ -83,13 +86,15 @@
    "fieldname": "qualification",
    "fieldtype": "Link",
    "label": "Qualification",
-   "options": "Qualification"
+   "options": "Qualification",
+   "reqd": 1
   },
   {
    "fieldname": "experience",
    "fieldtype": "Link",
    "label": "Experience",
-   "options": "Experience"
+   "options": "Experience",
+   "reqd": 1
   },
   {
    "fieldname": "column_break_11",
@@ -100,13 +105,15 @@
    "fieldtype": "Select",
    "in_standard_filter": 1,
    "label": "Current Employment status",
-   "options": "unemployed\nemployed"
+   "options": "unemployed\nemployed",
+   "reqd": 1
   },
   {
    "fieldname": "profile",
    "fieldtype": "Link",
    "label": "Profile",
-   "options": "Profile"
+   "options": "Profile",
+   "reqd": 1
   },
   {
    "depends_on": "eval:doc.current_employment_status == 'employed'",
@@ -145,7 +152,8 @@
    "fieldname": "english",
    "fieldtype": "Select",
    "label": "English",
-   "options": "medium\nlow\nhigh"
+   "options": "medium\nlow\nhigh",
+   "reqd": 1
   },
   {
    "fieldname": "column_break_21",
@@ -155,23 +163,26 @@
    "fieldname": "job_profile",
    "fieldtype": "Table MultiSelect",
    "label": "Job profile",
-   "options": "job profile"
+   "options": "job profile",
+   "reqd": 1
   },
   {
    "fieldname": "language",
    "fieldtype": "Link",
    "label": "Language",
-   "options": "know Language"
+   "options": "know Language",
+   "reqd": 1
   },
   {
    "fieldname": "age",
    "fieldtype": "Int",
-   "label": "Age"
+   "label": "Age",
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-03-10 01:29:48.488062",
+ "modified": "2022-03-16 23:58:32.565354",
  "modified_by": "Administrator",
  "module": "Zmodule",
  "name": "Candidate",

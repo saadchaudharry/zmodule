@@ -43,7 +43,14 @@
   "min_exp",
   "max_exp",
   "column_break_33",
-  "amended_from"
+  "min_age",
+  "max_age",
+  "amended_from",
+  "lft",
+  "rgt",
+  "is_group",
+  "old_parent",
+  "parent_vacanies"
  ],
  "fields": [
   {
@@ -58,7 +65,9 @@
   {
    "fieldname": "company",
    "fieldtype": "Link",
+   "in_filter": 1,
    "in_preview": 1,
+   "in_standard_filter": 1,
    "label": "Company",
    "options": "Company"
   },
@@ -76,6 +85,9 @@
   {
    "fieldname": "profile",
    "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
    "label": "Process",
    "options": "Profile"
   },
@@ -180,7 +192,7 @@
    "fieldname": "english",
    "fieldtype": "Select",
    "label": "English",
-   "options": "\nlow\nmedium\nhigh"
+   "options": "medium\nlow\nhigh"
   },
   {
    "fieldname": "max_exp",
@@ -244,15 +256,63 @@
    "fieldname": "table_13",
    "fieldtype": "Table",
    "options": "job apply"
+  },
+  {
+   "default": "0",
+   "fieldname": "min_age",
+   "fieldtype": "Int",
+   "label": "Min Age"
+  },
+  {
+   "default": "100",
+   "fieldname": "max_age",
+   "fieldtype": "Int",
+   "label": "Max Age"
+  },
+  {
+   "fieldname": "lft",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Left",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "rgt",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Right",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_group",
+   "fieldtype": "Check",
+   "label": "Is Group"
+  },
+  {
+   "fieldname": "old_parent",
+   "fieldtype": "Link",
+   "label": "Old Parent",
+   "options": "Vacanies"
+  },
+  {
+   "fieldname": "parent_vacanies",
+   "fieldtype": "Link",
+   "label": "Parent Vacanies",
+   "options": "Vacanies"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
+ "is_tree": 1,
  "links": [],
- "modified": "2022-03-10 01:12:12.368667",
+ "modified": "2022-03-17 00:01:07.171234",
  "modified_by": "Administrator",
  "module": "Zmodule",
  "name": "Vacanies",
+ "nsm_parent_field": "parent_vacanies",
  "owner": "Administrator",
  "permissions": [
   {
